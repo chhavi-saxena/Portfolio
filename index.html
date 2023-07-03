@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhavi-Developer Portfolio</title>
+    <!-- poppins font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         body{
+            background-color: rgb(0, 0,33);
+            color : white;
+            font-family: 'Poppins',sans-serif;
+         }
+         nav{
+                /* border: 2px solid white; */
+            display: flex;
+            /* position: sticky; */
+            justify-content: space-around;
+            align-items: center;
+            height: 80px ;
+            background-color: rgb(19, 19, 62);
+         }
+         
+         .mid{
+            font-size: 1.5rem;
+         }
+         .right ul li a{
+            text-decoration: none;
+            color: white;
+         }
+         .right ul li a:hover{
+            color: rgb(171, 171, 235);
+         }
+         nav ul{
+            display: flex;
+            justify-content: center;
+         }
+         nav ul li{
+            list-style: none;
+            margin : 0 23px;
+         }
+         /* div{
+                border: 2px solid yellow;
+         } */
+
+         .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            align-items: center;
+         }
+         .firstsection > div{
+            width: 30%;
+            
+         }
+         /* .firstsection div div{
+            width: 100%;
+         } */
+         .leftsection{
+            font-size: 2.5rem;
+            /* margin: 120px 0 120px 0; */
+         }
+         .leftsection span{
+            color: rgb(166, 120, 209);
+         }
+         img{
+            border-radius: 100%;
+         }
+         #element{
+            color :rgb(166, 120, 209);
+            font-size: 2rem;
+         }
+         .linkedin{
+            padding: 5px 10px ;
+            font-size: 1rem;
+            background-color: rgb(16, 37, 60);
+            font-style: bold;
+            color: white;
+         }
+         .linkedin:hover{
+            cursor: pointer;
+         }
+         
+         .rightsection img{
+            width: 100%;
+             margin: 50px 0 50px 0;
+         }
+         hr{
+            height: 1px;
+            border: 0;
+            background-color: rgb(178, 212, 243);
+            width: 80%;
+            margin: auto;
+         }
+         .secondsection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 65px 0;
+           
+            width: 82%;
+            margin: 65px auto;
+         }
+         .ss{
+            display: flex;
+            
+            width: 100%;
+         }
+         
+         .sscontent{
+            
+            display: flex;
+            flex-direction: column;
+           
+            width: 50% ;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(29, 29, 64)
+         }
+         h4{
+            margin: 0 0 20px 0 ;
+            font-size: 1.5rem;
+         }
+         
+        
+         .sscontent ul li{
+            margin: 0 30px 0 30px;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">You're most welcome here!</div>
+            <div class="mid">Chhavi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <!-- <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li> -->
+                    <!-- <li><a href="/">Services</a></li> -->
+                    <!-- <li><a href="/">Projects</a></li> -->
+                    <li><a href="contact.html" target="_blank" id="contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+        
+            <div class="leftsection">Hi, my name is <span>Chhavi Saxena</span>  
+                and I'm a student at <span>AKGEC</span>, Ghaziabad.
+                <div><span id="element"></span></div>
+                <button class="linkedin" >Visit LinkedIn</button>
+                
+            </div>
+            <div class="rightsection">
+                <img src="Images/Profile photo.jpeg " alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <div class="ss">
+                <section class="sscontent">
+                    <h4>Skillset</h4>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>JAVA</li>
+                        <li>C</li>
+                    </ul>
+                </section>
+                <section class="sscontent">
+                    <h4>Projects</h4>
+                </section>
+            </div>
+            <div class="ss">
+                <section class="sscontent">
+                    <h4>CourseWork</h4>
+                    <ul>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Operating Systems (Basics)</li>
+                        <li>Database Management Systems(Basics)</li>
+                        <li>Computer Networks</li>
+                    </ul>
+                </section> 
+                <section class="sscontent">
+                    <h4>Certificates</h4>
+                </section> 
+            </div>
+                     
+        </section>
+        </section>
+    </main>
+    <!-- typejs cdn -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+      strings: ['I am a passionate front end Web Developer'],
+      typeSpeed: 50,
+    });
+    
+    document.querySelector('.linkedin').addEventListener('click',()=>{
+        window.open('https://www.linkedin.com/in/chhavi-saxena-146318234/','blank')
+    });
+  </script>
+</body>
+</html>
